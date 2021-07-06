@@ -1,0 +1,45 @@
+.social-icon-list{
+    display: flex;
+    justify-content: space-around;
+}
+.social-icon-list_geometry{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+}
+.social-icon-link{
+    display: inline-block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill:var(--white-color);
+    background-color: var(--white-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
+        &:hover, &:focus{
+            background-color:var(--accent-color);
+        }
+    &:hover svg,
+    &:focus svg {
+        fill: var(--white-color);
+    }
+    svg{
+    transition: fill var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);  
+    }
+}
+.social-icon-link_geometry{
+    margin-right: 10px;
+}
+.social-icon-link_background-grey{
+    background: rgba(255, 255, 255, 0.1);
+}
+.social-icon{
+    width: 22px;
+    height: 22px;
+}
+.social-icon_color_main{
+    fill:var(--social-icons-color);
+}
+.social-icon_color_white{
+    fill:var(--white-color);
+}

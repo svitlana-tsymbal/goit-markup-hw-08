@@ -1,0 +1,17 @@
+
+.logo {
+       font-family: var(--accent-font);
+    @include font(var(--font-weigt-bold),26px,1.192,0.03em);
+}
+footer{
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+.logo_color_dark{
+    color: var(--main-text-color);
+}
+.logo_color_white {
+    color: var(--white-color);
+}
+.logo-accent {color: var(--accent-color);}
