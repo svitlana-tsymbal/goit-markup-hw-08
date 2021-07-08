@@ -183,6 +183,9 @@ background-origin: border-box;
     @media screen and (max-width: 1199px) {
         margin-left: 125px;
       }
+    @media screen and (max-width: 479px) {
+    margin-left: 45px;
+    }  
 }
 .sign{
     @include font(700,16px,1.875,0.06em);
@@ -200,6 +203,10 @@ background-origin: border-box;
     @media screen and (min-width:1200px) {
         max-width: 350px;
         margin-right: 12px;
+    }
+    @media screen and (max-width:479px) {
+        max-width: 290px;
+        margin-right: 6px;
     }
     height: 50px;
     

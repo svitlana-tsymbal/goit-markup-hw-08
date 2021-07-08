@@ -1,7 +1,8 @@
 .social-icon-list{
     display: flex;
     justify-content: center;
-    @media screen and (min-width:768px) {
+    margin-right: -10px;
+    @media screen and (min-width:1200px) {
         justify-content: space-around;
     }
 }
@@ -16,6 +17,9 @@
 .social-icon-link{
     display: inline-block;
     padding: 12px;
+    @media screen and (max-width:1199px) {
+        margin-right: 10px;
+    }
     width: 44px;
     height: 44px;
     border-radius: 50%;
