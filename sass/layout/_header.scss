@@ -1,18 +1,24 @@
 .header{
+    position: relative;
     border-bottom: 1px solid #ECECEC;
     @include font(var(--font-weigt-500),14px,1.143,0.02em);
     }
     .header-container{
         padding: 25px 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         @media screen and (min-width:768px) {
             display: flex;
+        }
+        @media screen and (min-width:1200px) {
+            padding-left: 100px;
+            padding-right: 100px;
         }
     }
 
 .nav__list{
-    
-        display: none;
-    
+    display: none;
     @media screen and (min-width:768px) {
         display: flex;
         margin-left: 88px;
@@ -82,7 +88,8 @@
     }
 }
 .mobile-nav{
-    position: absolute;
+    position: fixed;
+    z-index: 3;
     background-color: var(--white-color);
     top:0;
     width: 100vw;

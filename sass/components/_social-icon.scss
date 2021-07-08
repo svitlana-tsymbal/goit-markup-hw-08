@@ -1,11 +1,17 @@
 .social-icon-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    @media screen and (min-width:768px) {
+        justify-content: space-around;
+    }
 }
 .social-icon-list_geometry{
     margin-left: 32px;
     margin-right: 32px;
-    margin-bottom: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width:1200px) {
+       padding-bottom: 30px;
+    }
 }
 .social-icon-link{
     display: inline-block;

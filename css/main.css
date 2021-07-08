@@ -424,13 +424,25 @@ button {
 
 .social-icon-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social-icon-list {
+    justify-content: space-around;
+  }
 }
 
 .social-icon-list_geometry {
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-icon-list_geometry {
+    padding-bottom: 30px;
+  }
 }
 
 .social-icon-link {
@@ -914,6 +926,12 @@ footer .logo {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-form-button {
+    margin-left: 125px;
+  }
+}
+
 .sign {
   font-weight: 700;
   font-size: 16px;
@@ -957,6 +975,7 @@ footer .logo {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ECECEC;
   font-weight: var(--font-weigt-500);
   font-size: 14px;
@@ -966,11 +985,21 @@ footer .logo {
 
 .header-container {
   padding: 25px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -1070,7 +1099,8 @@ footer .logo {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
+  z-index: 3;
   background-color: var(--white-color);
   top: 0;
   width: 100vw;
@@ -1176,13 +1206,13 @@ footer .logo {
 }
 
 .hero .container {
-  padding: 118px 0;
+  padding: 118px 15px;
   text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .hero .container {
-    padding: 200px 0;
+    padding: 200px 15px;
   }
 }
 
@@ -1284,20 +1314,76 @@ footer .logo {
   background-repeat: no-repeat;
 }
 
-.main-messag .main-messag__item:nth-child(1)::before {
-  background-image: url(../images/icons/message-icons/antenna.svg);
+@media screen and (min-width: 320px) {
+  .main-messag .main-messag__item:nth-child(1)::before {
+    background-image: url(../images/icons/message-icons/antenna_mob.jpg);
+  }
 }
 
-.main-messag .main-messag__item:nth-child(2)::before {
-  background-image: url(../images/icons/message-icons/clock.svg);
+@media screen and (min-width: 768px) {
+  .main-messag .main-messag__item:nth-child(1)::before {
+    background-image: url(../images/icons/message-icons/antenna_tab.jpg);
+  }
 }
 
-.main-messag .main-messag__item:nth-child(3)::before {
-  background-image: url(../images/icons/message-icons/diagram.svg);
+@media screen and (min-width: 1200px) {
+  .main-messag .main-messag__item:nth-child(1)::before {
+    background-image: url(../images/icons/message-icons/antenna.svg);
+  }
 }
 
-.main-messag .main-messag__item:nth-child(4)::before {
-  background-image: url(../images/icons/message-icons/astronaut.svg);
+@media screen and (min-width: 320px) {
+  .main-messag .main-messag__item:nth-child(2)::before {
+    background-image: url(../images/icons/message-icons/clock_mob.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-messag .main-messag__item:nth-child(2)::before {
+    background-image: url(../images/icons/message-icons/clock_tab.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-messag .main-messag__item:nth-child(2)::before {
+    background-image: url(../images/icons/message-icons/clock.svg);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .main-messag .main-messag__item:nth-child(3)::before {
+    background-image: url(../images/icons/message-icons/diagram_mob.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-messag .main-messag__item:nth-child(3)::before {
+    background-image: url(../images/icons/message-icons/diagram_tab.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-messag .main-messag__item:nth-child(3)::before {
+    background-image: url(../images/icons/message-icons/diagram.svg);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .main-messag .main-messag__item:nth-child(4)::before {
+    background-image: url(../images/icons/message-icons/astronaut_mob.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-messag .main-messag__item:nth-child(4)::before {
+    background-image: url(../images/icons/message-icons/astronaut_tab.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-messag .main-messag__item:nth-child(4)::before {
+    background-image: url(../images/icons/message-icons/astronaut.svg);
+  }
 }
 
 .tasks {
@@ -1363,10 +1449,6 @@ footer .logo {
   }
 }
 
-.team .team__list {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .team .team__list {
     display: flex;
@@ -1377,7 +1459,7 @@ footer .logo {
 
 .team .team__main-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: var(--font-weigt-bold);
   font-size: 28px;
   line-height: 1.167;
@@ -1388,6 +1470,7 @@ footer .logo {
 @media screen and (min-width: 1200px) {
   .team .team__main-title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1470,7 +1553,7 @@ footer .logo {
 
 .client .client__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: var(--font-weigt-bold);
   font-size: 28px;
   line-height: 1.167;
@@ -1481,6 +1564,7 @@ footer .logo {
 @media screen and (min-width: 1200px) {
   .client .client__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1674,7 +1758,7 @@ footer {
 
 @media screen and (max-width: 1199px) {
   .footer__list_all {
-    margin-bottom: 60px;
+    margin-bottom: -60px;
   }
 }
 

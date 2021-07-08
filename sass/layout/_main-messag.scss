@@ -49,22 +49,54 @@
             }
         &:nth-child(1){
             &::before{
-            background-image: url(../images/icons/message-icons/antenna.svg);
+                @media screen and (min-width:320px) {
+                    background-image: url(../images/icons/message-icons/antenna_mob.jpg);  
+                }
+                @media screen and (min-width:768px) {
+                    background-image: url(../images/icons/message-icons/antenna_tab.jpg);  
+                }
+                @media screen and (min-width:1200px) {
+                    background-image: url(../images/icons/message-icons/antenna.svg);  
+                }
             }
         }
         &:nth-child(2){
             &::before{
-            background-image: url(../images/icons/message-icons/clock.svg);
+                @media screen and (min-width:320px) {
+                    background-image: url(../images/icons/message-icons/clock_mob.jpg);  
+                }
+                @media screen and (min-width:768px) {
+                    background-image: url(../images/icons/message-icons/clock_tab.jpg);  
+                }
+                @media screen and (min-width:1200px) {
+                    background-image: url(../images/icons/message-icons/clock.svg);  
+                }
             }
         }
         &:nth-child(3){
            &::before{
-            background-image: url(../images/icons/message-icons/diagram.svg);
+                @media screen and (min-width:320px) {
+                    background-image: url(../images/icons/message-icons/diagram_mob.jpg);  
+                }
+                @media screen and (min-width:768px) {
+                    background-image: url(../images/icons/message-icons/diagram_tab.jpg);  
+                }
+                @media screen and (min-width:1200px) {
+                    background-image: url(../images/icons/message-icons/diagram.svg);  
+                }
             } 
         }
         &:nth-child(4){
             &::before{
-            background-image: url(../images/icons/message-icons/astronaut.svg);
+                @media screen and (min-width:320px) {
+                    background-image: url(../images/icons/message-icons/astronaut_mob.jpg);  
+                }
+                @media screen and (min-width:768px) {
+                    background-image: url(../images/icons/message-icons/astronaut_tab.jpg);  
+                }
+                @media screen and (min-width:1200px) {
+                    background-image: url(../images/icons/message-icons/astronaut.svg);  
+                }  
             }
         }
     }
